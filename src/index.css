@@ -1,0 +1,22 @@
+:root {
+  --numberOfTiles: 8;
+  --tileSideLength: 70;
+  --gameSide: calc(var(--numberOfTiles) * var(--tileSideLength) * 1px);
+}
+
+.app{
+  display:flex;
+  padding: 30px;
+}
+
+.game{
+  width:var(--gameSide);
+  height:var(--gameSide);
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.game img{
+  width:70px;
+  height: 70px;
+}
